@@ -272,6 +272,201 @@ body {
 .gif{
     width: 100%;
     height: 100%;
-
 }
 
+/* feature 03 */
+.feature-03-bg-video-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    min-width: 47%;
+    top: 9%;
+    left: 19%;  
+    z-index: -1;
+}
+
+/* feature 04 */
+.feature__04{
+    flex-direction: row-reverse;
+}
+
+/* Faq section */
+
+.faq-list-container{
+    border-top: 8px solid #222222;
+    padding: var(--base-padding);
+}
+
+.faq-heading{
+    font-size: var(--title-font-size);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.faq-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-question{
+    max-width: 80%;
+}
+
+.faq-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-size: var(--sub-title-font-size);
+    font-weight: 400;
+    background-color: rgba(45,45,45,1);
+    border: 1px solid rgba(45,45,45,1);
+    color: white;
+}
+
+.faq-title:hover{
+    background-color: rgba(78, 78, 78,1);
+    cursor: pointer;
+}
+
+.faq-answer{
+    max-height: 0;
+    overflow: hidden; 
+    background-color: #303030;
+    border-top: 1px solid black;
+    font-size: 1.2rem;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.faq-answer > p{
+    margin: 1.5rem;
+}
+
+.faq-email{
+    text-align: center;
+}
+
+.faq-email > h3{
+    font-size: var(--sub-title-font-size);
+    font-weight: 400;
+    margin: 4rem 0 2rem 0;
+}
+
+/* footer section */
+footer{
+    border-top: 8px solid #333;
+    padding: var(--base-padding);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-content{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-content__row-01 > h4{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 25px;
+}
+
+.footer-content__row-02 > ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    list-style-type: none;
+    line-height: 1.4rem;
+    padding: 15px 0;
+}
+
+.footer-content__row-02 > ul > li > a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-content__row-02 > ul > li > a:hover{
+    color: white;
+}
+
+.footer-content__row-03 > .dropdown__container{
+    max-width: fit-content;
+    border: 1px solid white;
+    color: white;
+}
+
+.footer-content__row-03 > .dropdown__container > .language__dropdown{
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .feature{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .netflix-card{
+        padding: 0 6rem;
+    }
+    .feature-02-poster-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    :root{
+        --title-font-size: 0.2rem;
+        --sub-title-font-size: 1.1rem;
+        --base-padding: 2rem;
+    }
+    .feature{
+        flex-direction: column;
+        text-align: center;
+    }
+    .netflix-card{
+        padding: 0 2rem;
+    }
+    .faq-answer{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .navbar{
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    :root{
+        --base-padding: 1rem;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    /* .language__dropdown{
+        width: 0.06rem !important;
+        padding-right: 1.75rem !important;
+    } */
+    .netflix-card{
+        margin-top: 150px;
+    }
+
+    .email-form{
+        flex-direction: column;
+    }
+    
+    .primary-button{
+        font-size: 1rem;
+    }
+}
