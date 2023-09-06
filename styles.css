@@ -216,6 +216,62 @@ body {
 
 .feature-bg-video {
     width: 100%;
+}
+
+/* feature 02 */
+.feature__02{
+    flex-direction: row-reverse;
+}
+
+.feature-02-poster-container{
+    position: absolute;
+    width: 100%;
+    max-width: 24rem;
+    min-width: 15rem;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+    padding: 10px 20px;
+    gap: 15px;
+}
+
+.poster-container{
+    width: 20%;
+}
+
+.poster{
+    width: 100%;
+    height: 100%;
+}
+
+.poster-details{
+    width: 60%;
+}
+
+.poster-details > h4{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.poster-details > h6{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(63 , 63, 246);
+}
+
+.download-gif-container{
+    width: 20%;
+    height: 100%;
+}
+
+.gif{
+    width: 100%;
+    height: 100%;
 
 }
 
